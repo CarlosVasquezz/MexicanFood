@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803881599638",
+    "project_id": "db-mf-7d48e",
+    "storage_bucket": "db-mf-7d48e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803881599638:android:15eecd4c920d153f90b8b7",
+        "android_client_info": {
+          "package_name": "www.mf.mexifood.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnjAKvnoHb106by65GBwP9Y_yxbjbS-Xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
