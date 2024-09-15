@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MexiFood</string>
-</resources>
+        <!-- Descripción del logo -->
+        <string name="logo_description">Logo de la aplicación</string>
+
+        <!-- Otros textos -->
+        <string name="email_hint">Correo Electrónico</string>
+        <string name="password_hint">Contraseña</string>
+        <string name="login_button">Iniciar Sesión</string>
+        <string name="register_button">Registrar</string>
+        <string name="no_account">¿No tienes cuenta?</string>
+        <string name="register">Regístrate</string>
+        <string name="already_have_account">¿Ya tienes una cuenta?</string>
+        <string name="login">Inicia Sesión</string>
+    </resources>
