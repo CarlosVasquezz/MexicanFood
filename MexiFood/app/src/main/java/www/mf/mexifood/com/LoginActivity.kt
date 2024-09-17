@@ -8,8 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
@@ -24,8 +22,9 @@ class LoginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
 
-       auth = FirebaseAuth.getInstance()
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        auth = FirebaseAuth.getInstance()
+        btnLogin = findViewById(R.id.btnLogin)
+        textViewRegister = findViewById(R.id.textViewRegister)
 
         btnLogin.setOnClickListener {
             val email = findViewById<EditText>(R.id.editTextEmailAddress).text.toString()
@@ -33,27 +32,26 @@ class LoginActivity : AppCompatActivity() {
             this.login(email, password)
         }
 
-        val textViewRegister = findViewById<TextView>(R.id.textViewRegister)
-
         textViewRegister.setOnClickListener {
             this.goToRegister()
         }
     }
+
     private fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, ProductsActivity::class.java)
                 startActivity(intent)
                 finish()
+            } else {
+                Toast.makeText(applicationContext, task.exception?.localizedMessage, Toast.LENGTH_LONG).show()
             }
-        }.addOnFailureListener { exception ->
-            Toast.makeText(applicationContext, exception.localizedMessage, Toast.LENGTH_LONG).show()
         }
     }
+
+
     private fun goToRegister() {
         val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)
     }
-
-
 }

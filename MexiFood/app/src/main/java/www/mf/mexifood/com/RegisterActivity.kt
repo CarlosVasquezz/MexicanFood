@@ -40,17 +40,17 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun register(email: String, password: String) {
-
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
+            } else {
+                Toast.makeText(applicationContext, task.exception?.localizedMessage, Toast.LENGTH_LONG).show()
             }
-        }.addOnFailureListener { exception ->
-            Toast.makeText(applicationContext, exception.localizedMessage, Toast.LENGTH_LONG).show()
         }
     }
+
 
     private fun goToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
