@@ -1,5 +1,6 @@
 package www.mf.mexifood.com
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,14 @@ class ProductsActivity : AppCompatActivity() {
         productAdapter = ProductAdapter(emptyList())
         binding.recyclerView.adapter = productAdapter
 
+        // Cargar productos
         loadProductos()
+
+        // Configurar botón para ver bebidas
+        binding.buttonBebidas.setOnClickListener {
+            val intent = Intent(this, DrinksActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun loadProductos() {

@@ -27,10 +27,10 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".LogOut"
+            android:name=".ProductsActivity"
             android:exported="true" />
         <activity
-            android:name=".ProductsActivity"
+            android:name=".DrinksActivity"
             android:exported="true" />
     </application>
 

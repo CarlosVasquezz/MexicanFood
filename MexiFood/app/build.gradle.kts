@@ -28,7 +28,7 @@ android {
         }
     }
 
-    // Agregar la configuración de View Binding
+
     viewBinding {
         enable = true
     }
