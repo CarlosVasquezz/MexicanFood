@@ -1,11 +1,12 @@
 <!-- res/values/colors.xml -->
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="light_gray">#D3D3D3</color>
-    <color name="gray">#808080</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="red">#FF0000</color>
+    <color name="colorPrimary">#FFEB3B</color>
+    <color name="colorPrimaryDark">#FBC02D</color>
+    <color name="LightPrimaryColor">#FFF9C4</color>
+    <color name="TextIcons">#212121</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecondaryText">#757575</color>
+    <color name="DividerColor">#BDBDBD</color>
+    <color name="BackGround">#F0F4C3</color>
 </resources>

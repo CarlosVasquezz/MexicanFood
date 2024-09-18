@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/white"
+    android:background="@color/BackGround"
     tools:context=".LoginActivity">
 
     <!-- Espacio para el logo -->
@@ -14,7 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
-        android:contentDescription="@string/logo_description"
         app:layout_constraintBottom_toTopOf="@id/editTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,8 +30,8 @@
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:background="@drawable/rounded_edittext"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
+        android:textColor="@color/PrimaryText"
+        android:textColorHint="@color/SecondaryText"
         app:layout_constraintBottom_toTopOf="@id/txtPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +47,8 @@
         android:inputType="textPassword"
         android:padding="16dp"
         android:background="@drawable/rounded_edittext"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
+        android:textColor="@color/PrimaryText"
+        android:textColorHint="@color/SecondaryText"
         app:layout_constraintBottom_toTopOf="@id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +61,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/login_button"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
@@ -88,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_account"
-            android:textColor="@color/gray"
+            android:textColor="@color/SecondaryText"
             android:textSize="16sp" />
 
         <TextView
@@ -96,9 +95,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/register"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/PrimaryText"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
