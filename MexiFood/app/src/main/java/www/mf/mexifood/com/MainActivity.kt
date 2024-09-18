@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
 
         val buttonComidas: Button = findViewById(R.id.buttonComidas)
         val buttonBebidas: Button = findViewById(R.id.buttonBebidas)
+        val buttonCarrito: Button = findViewById(R.id.buttonCarrito)
+
 
         buttonComidas.setOnClickListener {
             val intent = Intent(this, ProductsActivity::class.java)
@@ -26,7 +28,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DrinksActivity::class.java)
             startActivity(intent)
         }
+
+        buttonCarrito.setOnClickListener {
+            val intent = Intent(this, CarritoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
-
-

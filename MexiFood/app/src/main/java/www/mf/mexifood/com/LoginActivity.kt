@@ -40,7 +40,8 @@ class LoginActivity : AppCompatActivity() {
     private fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                val intent = Intent(this, ProductsActivity::class.java)
+                // Ir a ProductsActivity o DrinksActivity según tu lógica
+                val intent = Intent(this, ProductsActivity::class.java) // Cambia a DrinksActivity si es necesario
                 startActivity(intent)
                 finish()
             } else {
@@ -48,7 +49,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
 
     private fun goToRegister() {
         val intent = Intent(this, RegisterActivity::class.java)
