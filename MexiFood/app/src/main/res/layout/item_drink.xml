@@ -3,38 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/item_background">
 
+    <!-- Título de la sección -->
+
+    <!-- Imagen de la bebida -->
     <ImageView
         android:id="@+id/drinkImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_image"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:scaleType="centerCrop" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Nombre de la bebida -->
     <TextView
         android:id="@+id/drinkName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Nombre de la bebida"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/drinkImage"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/drinkImage"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="16dp" />
 
+    <!-- Precio de la bebida -->
     <TextView
         android:id="@+id/drinkPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="$0.00"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/drinkImage"
         app:layout_constraintTop_toBottomOf="@id/drinkName"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="16dp" />
 
+    <!-- Descripción de la bebida -->
     <TextView
         android:id="@+id/drinkDescription"
         android:layout_width="0dp"
