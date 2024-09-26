@@ -7,4 +7,4 @@
 - [Video en Drive](https://drive.google.com/file/d/1gwZiEROKU4czDw8tMF2f38y5C8a29MzJ/view?usp=sharing)
 - [Documento](https://github.com/CarlosVasquezz/MexicanFood/blob/main/Doc.pdf)
 - [Logo](https://github.com/CarlosVasquezz/MexicanFood/blob/main/MexiFood/app/src/main/res/drawable/logo.png)
->>>>>>> 99d9cfb21e37c81dbf11e3558ed2c148c1e99632
+
